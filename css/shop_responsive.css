@@ -1,0 +1,39 @@
+@charset"utf-8";
+
+@media screen and (max-width:768px) {
+	#shop_main {
+		display: block;
+	}
+	
+	#sub_nav ul {
+		display: flex;
+		width: 100%;
+/*		position: fixed;*/
+		height: 200px;
+		justify-content: space-between;
+	}
+	#sub_nav ul li{
+		width: 140px; 
+		transition: none;
+		
+	}
+    #sub_nav ul li a {
+	transition: none;
+		margin: auto;
+}
+
+    .slideshow {
+    width: 100%;
+}
+
+#sub_nav ul li:hover{
+	background-color: #006946;
+	width: 25%;
+}
+	#sub_nav ul li:hover{
+	background-color: #006946;
+	width: 140px;
+	border-radius: 50%;
+}
+
+}

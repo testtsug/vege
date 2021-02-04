@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>おはベジ - 新規登録</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.ico" type="image/ico">
+    <script src="../js/jQuery3.4.1.js"></script>
+    <script src="../js/script.js"></script>
+
+</head>
+
+<body class="is-slide" id="page-animate">
+    <div id="container">
+        <!--ヘッダー-->
+        <header>
+            <!--	タイトルロゴ-->
+            <div class="logo">
+                <h1><a href="index.html"><img src="../img/navlogoyoko.svg" alt="OHAVEGE"></a></h1>
+            </div>
+
+
+            <!--ナビ右側-->
+            <div class="right_menu">
+                <ul>
+                    <li>
+                        <a href="member.html"><i class="fas fa-user"></i><br>MY PAGE</a>
+                    </li>
+                    <li>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i><br>CART</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--		PAGE TOP-->
+        <div class="pagetop">
+            <a href="#"><img src="../img/illust24.png" width="100px" height="100px" alt="トップへ戻る"></a>
+        </div>
+
+        <!--メインコンテンツ-->
+        <div id="sinki_main">
+            <div class="box-sinki">
+                <h2>新規登録</h2>
+            </div>
+            <p class="setumei">以下のフォームより必要事項を記入の上送信してください。<br><span class="under"><span class="must">(必須)</span>欄は必ずご記入ください。</span></p>
+            <form class="registration" action="">
+                <P><label>お名前<span class="must">（必須）</span><br>
+                        <input type="text" name="name" required></label></P>
+                <p><label>郵便番号<span>（任意）</span><br>
+                        <input type="text" name="post-code"></label>
+                </p><br>
+                <p><label>住所<span class="must">（必須）</span><br>
+                        <input type="text" name="address" required></label>
+                </p><br>
+
+                <p><label>メールアドレス<span class="must">（必須）</span><br>
+                        <input type="email" name="email" required></label>
+                </p><br>
+                <p><label>メールアドレス確認用<span class="must">（必須）</span><br>
+                        <input type="email" name="confirm_email" required></label>
+                </p><br>
+
+                <p><label>ご連絡先電話番号<span class="must">（必須）</span><br>
+                        <input type="tel" name="tel" required>
+                    </label></p><br>
+                <p><label>パスワード<span class="must">（必須）</span><br>
+                        <input class password2 type="password" name="password" required></label></p><br>
+                <p><label>パスワード（確認）<span class="must">（必須）</span><br>
+                        <input type="password" name="password_confirm" required></label></p><br>
+                <p><label>支払方法<span class="must">（必須）</span><br>
+                        <textarea name="payment"></textarea></label>
+                </p><br>
+
+
+
+                <div>
+                    <p><input type="checkbox" name="level" value="ok" required>個人情報の取り扱いについて同意します。</p><br>
+
+                    <a href="registration_confirm.html">
+                        <p class="submit"><input type="submit" value="確認する"></p>
+                    </a>
+                </div>
+
+            </form>
+
+
+
+
+        </div>
+    </div>
+
+    <!--フッター-->
+    <div class="bottom">
+        <div class="footer_img">
+            <img src="../img/footer1.png" alt="">
+        </div>
+        <footer>
+            <ul>
+                <li><a href="/shop.html">オンライン<br class="brsp">ショップ</a></li>
+                <li><a href="/privacyplicy.html">プライバシー<br class="brsp">ポリシー</a></li>
+                <li><a href="/tokushohou.html">特定商取引法<br class="brsp">表示</a></li>
+            </ul>
+        </footer>
+
+        <!--コピーライト-->
+        <div id="copyright">
+            <p>
+                <small>Copyright &copy; 2020 OHAVEGE Inc.</small>
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

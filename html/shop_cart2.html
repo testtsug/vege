@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>おはベジ - お買いものかご</title>
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shop_cart_responsive.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.ico" type="image/ico">
+    <script src="../js/jQuery3.4.1.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body class="is-slide" id="page-animate">
+    <div id="container">
+        <!--ヘッダー-->
+        <header>
+            <!--	タイトルロゴ-->
+            <div class="logo">
+                <h1><a href="../index.html"><img src="../img/navlogoyoko.svg" alt="OHAVEGE"></a></h1>
+            </div>
+
+
+            <!--ナビ右側-->
+            <div class="right_menu">
+                <ul>
+                    <li>
+                        <a href="member.html"><i class="fas fa-user"></i><br>MY PAGE</a>
+                    </li>
+                    <li>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i><br>CART</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--メインコンテンツ-->
+        <div id="shop_cart_main">
+
+            <div class="shopping_cart">
+                <h2>ショッピングカート</h2>
+            </div>
+
+            <form class="form_cart" action="cart_done.php" method="post">
+                <figure>
+                    <label for="かぼちゃ"><img src="../img/pumpkin1.jpg" alt="" class="pumpkin1"></label>
+
+                    <figcaption>
+                        <dt>商品名：</dt>
+                        <dd>かぼちゃ</dd>
+                        <dt>価格：</dt>
+                        <dd>600円</dd>
+                        <dt>注文数：</dt>
+                        <dd>1個</dd>
+                        <dt>小計：</dt>
+                        <dd>600円</dd>
+                    </figcaption>
+                </figure>
+
+                <div id="cart">
+
+                    <a class="button" href="mypage_login.html">ログイン</a><br>
+                    <a class="button" href="registration.html">新規登録</a>
+
+                </div>
+            </form>
+
+
+
+        </div>
+
+        <!--フッター-->
+        <div class="bottom">
+            <div class="footer_img">
+                <img src="../img/footer1.png" alt="">
+            </div>
+            <footer>
+                <ul>
+                    <li><a href="/shop.html">オンライン<br class="brsp">ショップ</a></li>
+                    <li><a href="/privacyplicy.html">プライバシー<br class="brsp">ポリシー</a></li>
+                    <li><a href="/tokushohou.html">特定商取引法<br class="brsp">表示</a></li>
+                </ul>
+            </footer>
+
+            <!--コピーライト-->
+            <div id="copyright">
+                <p>
+                    <small>Copyright &copy; 2020 OHAVEGE Inc.</small>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body></html>

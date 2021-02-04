@@ -1,0 +1,618 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*共通*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.875em;
+    color: #333;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #006946;
+}
+
+#container {
+    width: 100vw;
+    height: auto;
+}
+
+/*ヘッダー*/
+header {
+    z-index: 100;
+    width: 100vw;
+    position: fixed;
+    background-color: #fff;
+    opacity: .8;
+    top: 0:
+}
+
+/*ヘッダー：ロゴ*/
+.logo {
+    /*	position: relative;*/
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    vertical-align: bottom;
+    padding: 0;
+}
+
+/*ヘッダー：ナビ右側*/
+.right_menu {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.right_menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.right_menu li {
+    padding: 10px;
+    min-width: 75px;
+}
+
+.right_menu i {
+    font-size: 2em;
+}
+
+/*トップへ戻る*/
+.pagetop {
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+}
+
+.pagetop img {
+    width: 100px;
+    height: auto;
+}
+
+/*お問い合わせありがとうございました↓↓*/
+.contact-thx h2 img {
+    width: 40%;
+}
+
+/*マイページ↓↓*/
+/*mypage CSS*/
+h2.mypage1 {
+    margin: 120px auto 1px auto;
+    text-align: center;
+    padding: 5px;
+
+}
+
+h2.mypage1::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 120px);
+    top: 142px;
+    width: 240px;
+    height: 7px;
+    background: repeating-linear-gradient(-45deg, #006946, #006946 2px, #fff 2px, #fff 4px);
+    margin-top: 10px;
+}
+
+
+table {
+    text-align: center;
+    border: 1px solid #000;
+    margin: 10px auto 10px auto;
+    width: 400px;
+    height: 200px;
+    border-collapse: collapse;
+    padding: 0;
+}
+
+tboby {
+    border: 1px solid #000;
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    border: 1px solid #000;
+    padding: 0px;
+    margin: 0;
+}
+
+th {
+    border: 1px solid #000;
+    padding: 0px;
+    margin: 0;
+}
+
+tr {
+    border: 1px solid #000;
+    padding: 0px;
+    margin: 0;
+}
+
+/*
+p {
+	text-align: center;
+	margin: 0;
+	padding-bottom: 20px;
+}
+*/
+
+.form_button {
+    width: auto;
+    height: 35px;
+    /*	text-align: center;*/
+}
+
+.changemydate {
+    width: auto;
+    height: 35px;
+    /*	text-align: center;*/
+}
+
+.logout {
+    width: auto;
+    height: 35px;
+    /*	text-align: center;*/
+}
+
+#sub {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#sub p {
+    position: relative;
+    display: inline-block;
+    padding: .4em 1em;
+    background: linear-gradient(#006946, #006946);
+    border: 1px solid #006946;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 11px;
+    width: 100px;
+}
+
+#sub p::after {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    content: '';
+    border: 2px dashed #fff;
+    border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+}
+
+#sub p:hover {
+    transform: translate(5px, 5px);
+    opacity: .8;
+    cursor: pointer;
+}
+
+p .form_button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+p .changemydate {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+p .logout {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+#main {
+    height: 100vh;
+}
+
+p {
+    margin: auto 10px;
+}
+
+p a {
+    color: white;
+    line-height: 35px;
+}
+
+/*マイページログイン↓↓*/
+
+
+div#touroku {
+    width: 300px;
+    /*	margin-top: 150px;*/
+    margin: 130px auto 18px auto;
+    text-align: center;
+
+}
+
+#touroku img {
+    width: 100%;
+}
+
+#main {
+    text-align: center;
+}
+
+#main p {
+    position: relative;
+    display: inline-block;
+    padding: .5em 1em;
+    background: linear-gradient(#006946, #006946);
+    border: 1px solid #006946;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#main p::after {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    content: '';
+    border: 2px dashed #fff;
+    border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+}
+
+#main p:hover {
+    transform: translate(5px, 5px);
+    opacity: .8;
+    cursor: pointer;
+}
+
+p a {
+    color: white;
+}
+
+#main p {
+    width: 100px;
+}
+
+/*登録画面*/
+#sinki_main {
+    position: relative;
+    top: 80px;
+    left: auto;
+    height: 150vh;
+    text-align: center;
+
+}
+
+#sinki_main h2 {
+    font-size: 1.5em;
+    line-height: 0.8em;
+    padding-bottom: 15px;
+
+}
+
+#sinki_main h2::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 120px);
+    top: 25px;
+    width: 240px;
+    height: 7px;
+    background: repeating-linear-gradient(-45deg, #006946, #006946 2px, #fff 2px, #fff 4px);
+}
+
+input[type="text"] {
+    width: 200px;
+
+}
+
+input[type="text"][name="address"] {
+    width: 400px;
+}
+
+
+input[type="email"] {
+    width: 300px;
+}
+
+input[type="tel"] {
+    width: 200px;
+}
+
+input[type="password"] {
+    width: 300px;
+}
+
+textarea {
+    width: 300px;
+    height: auto;
+    overflow-y: scroll;
+}
+
+.button,
+.submit {
+    position: relative;
+    display: inline-block;
+    padding: .5em 1em;
+    background: linear-gradient(#006946, #006946);
+    border: 1px solid #006946;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button::after,
+.submit::after {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    content: '';
+    border: 2px dashed #fff;
+    border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+}
+
+.button:hover,
+.submit:hover {
+    transform: translate(5px, 5px);
+    opacity: .8;
+    cursor: pointer;
+}
+
+input[type="submit"],
+input[type="button"] {
+    padding: .4em 1em;
+    background: linear-gradient(#006946, #006946);
+    border: 1px solid #006946;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+
+    width: auto;
+    height: 40px;
+}
+
+.must {
+    color: #f00;
+}
+
+.under {
+    background: linear-gradient(transparent 50%, yellow 50%);
+}
+
+/*登録画面おわり*/
+
+/*登録確認画面↓↓*/
+#registration_main {
+    position: relative;
+    top: 80px;
+    left: auto;
+    height: 130vh;
+    text-align: center;
+
+}
+
+#registration_main h2 {
+    font-size: 1.5em;
+    line-height: 0.8em;
+    padding-bottom: 15px;
+
+}
+
+#registration_main h2 {
+    font-size: 1.5em;
+    line-height: 0.8em;
+    padding-bottom: 15px;
+
+}
+
+#registration_main h2::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 120px);
+    top: 25px;
+    width: 240px;
+    height: 7px;
+    background: repeating-linear-gradient(-45deg, #006946, #006946 2px, #fff 2px, #fff 4px);
+}
+
+
+
+
+
+/*登録変更画面*/
+#henkou_main {
+    position: relative;
+    top: 80px;
+    left: auto;
+    height: 130vh;
+    text-align: center;
+
+}
+
+#henkou_main h2 {
+    font-size: 1.5em;
+    line-height: 0.8em;
+    padding-bottom: 15px;
+
+}
+
+#henkou_main h2 {
+    font-size: 1.5em;
+    line-height: 0.8em;
+    padding-bottom: 15px;
+
+}
+
+#henkou_main h2::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 120px);
+    top: 25px;
+    width: 240px;
+    height: 7px;
+    background: repeating-linear-gradient(-45deg, #006946, #006946 2px, #fff 2px, #fff 4px);
+}
+
+
+/*登録変更画面*/
+
+
+/*お買い物かご↓↓*/
+
+/*お買い物かご（ログインが必要な人向け）↓↓*/
+
+/*ご購入ありがとうございました、お問い合わせありがとう↓↓*/
+
+
+/*フッター*/
+
+
+.footer_img img {
+    width: 100%;
+    margin: 0;
+    vertical-align: bottom;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #ac6525;
+    color: #fff;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    line-height: 1em;
+    max-width: 180px;
+    width: 30vw;
+    text-align: center;
+    margin-top: 20px;
+    border-left: 2px solid #fff;
+}
+
+footer li:last-child {
+    border-right: 2px solid #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer li .brsp {
+    display: none;
+}
+
+/*コピーライト*/
+#copyright {
+    padding: 10px;
+    background-color: #ac6525;
+    line-height: 2em;
+    height: 2em;
+    text-align: center;
+    color: #fff;
+    letter-spacing: .1em;
+}
+
+
+/*　↓↓↓↓↓↓　width 768px以下のメディアクエリー　↓↓↓↓↓↓ */
+
+@media(max-width:768px) {
+
+    /*    min-width320pxの設定*/
+    #container header {
+        min-width: 320px;
+    }
+
+    #container .bottom li {
+        min-width: 96px;
+        font-size: 0.8em;
+    }
+
+    #container .bottom img {
+        min-width: 320px;
+    }
+
+    /*    ヘッダーロゴ*/
+    header .logo {
+        width: 20%;
+        margin-left: 5px;
+    }
+
+    .logo img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        max-width: 50vw;
+        min-width: 160px;
+        height: auto;
+        vertical-align: bottom;
+        padding: 0;
+    }
+
+    /*    ヘッダーナビ右側*/
+    .right_menu ul li {
+        padding: 10px 5px 10px 5px;
+        min-width: 65px;
+        box-sizing: border-box;
+    }
+
+
+    /* フッターテキスト　改行*/
+    footer li .brsp {
+        display: inline;
+    }
+    
+    #container
+}
+
+
+
+
+/*　↓↓↓↓　width 1200px以上のメディアクエリー　↓↓↓↓*/
+@media(min-width:1200px) {
+
+    /*    max-width1200pxの設定*/
+
+}
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media (max-width:960px) {
+    #shop_cart_main {
+        margin: 0 10vw 0 10vw;
+    }
+
+    .form_cart figure {
+        display: block;
+    }
+}

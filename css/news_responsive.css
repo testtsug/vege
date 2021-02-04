@@ -1,0 +1,84 @@
+/*---------レスポンシブ--------*/
+@charset "utf-8";
+/*max-width 1200px*/
+@media screen and (min-width:1200px) {
+    #content {
+        max-width: 1200px;
+    }
+}
+
+/*max-width 769px*/
+@media screen and (max-width:769px) {
+    #content {
+        width: 95vw;
+    }
+
+    #news {
+        margin: 0 auto;
+        font-size: 1em;
+    }
+
+    .news_img {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .news_img img {
+        width: 75%;
+    }
+
+    .news_article1,
+    .news_article2,
+    .recipe_text,
+    .recipe,
+    .farm_wrap {
+        display: block;
+    }
+
+    .table {
+        width: 80%;
+        margin: auto;
+    }
+
+    .table td {
+        white-space: nowrap;
+    }
+
+    .table,
+    .farm,
+    .farm1 {
+        margin-bottom: 20px;
+    }
+
+    .farm {
+        margin-left: 10px;
+    }
+
+    .news_text1,
+    .news_text2,
+    .text_wrap,
+    .text_sub,
+    .recipe {
+        margin: auto;
+        text-align: center;
+    }
+
+    .list {
+        display: inline-block;
+    }
+.ribbon-tag{
+        display: none;
+    }
+
+
+    .recipe_howto ol li {
+        text-align: left;
+    }
+
+    .br-sp {
+        display: block;
+    }
+
+
+}
+

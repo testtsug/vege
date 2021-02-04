@@ -1,0 +1,450 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width:960px) {
+
+	img {
+		max-width: 960px;
+	}
+
+	/*	ヘッダー*/
+
+	/*	ヘッダー：ロゴ*/
+	.logo {
+		width: 100%;
+		height: auto;
+	}
+
+	.logo img {
+		width: auto;
+		padding-left: 20px;
+		margin: 0;
+		display: block;
+	}
+
+	/*  ヘッダー：ナビゲーション*/
+	.nav {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: -300px;
+		bottom: 0;
+		width: 300px;
+		background: #fff;
+		overflow-x: hidden;
+		overflow-y: auto;
+		transition: all .5s;
+		z-index: 10;
+		opacity: 0;
+		margin-left: -1px;
+	}
+
+	.open2 .nav {
+		left: 0;
+		opacity: 1;
+	}
+
+	.nav {
+		/*		padding: 20px;*/
+	}
+
+	.nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
+
+	.nav li {
+		width: 80%;
+		position: relative;
+		margin: 0;
+		border-bottom: 2px dotted #ac6525;
+	}
+
+	.nav a {
+		display: block;
+		color: #333;
+		font-size: 14px;
+		padding: 1em;
+		transition-duration: 0.2s;
+		text-align: start;
+	}
+
+	.nav {
+		left: -70%;
+		width: 70%;
+	}
+
+	.toggle_btn {
+		display: block;
+		position: fixed;
+		top: 20px;
+		right: 30px;
+		width: 30px;
+		height: 30px;
+		transition: all .5s;
+		cursor: pointer;
+		z-index: 3;
+	}
+
+	.toggle_btn span {
+		display: block;
+		position: absolute;
+		left: 0;
+		width: 30px;
+		height: 2px;
+		background-color: #333;
+		border-radius: 4px;
+		transition: all .5s;
+	}
+
+	.toggle_btn span:nth-child(1) {
+		top: 4px;
+	}
+
+	.toggle_btn span:nth-child(2) {
+		top: 14px;
+	}
+
+	.toggle_btn span:nth-child(3) {
+		bottom: 4px;
+	}
+
+	.open2 .toggle_btn span {
+		background-color: #fff;
+	}
+
+	.open2 .toggle_btn span:nth-child(1) {
+		transform: translateY(10px) rotate(-315deg);
+	}
+
+	.open2 .toggle_btn span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.open2 .toggle_btn span:nth-child(3) {
+		transform: translateY(-10px) rotate(315deg);
+	}
+
+	#mask {
+		display: none;
+		transition: all .5s;
+	}
+
+	.open2 #mask {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #ac6525;
+		opacity: .7;
+		z-index: 2;
+		cursor: pointer;
+	}
+
+	/*	ヘッダー：ナビ右側*/
+	.right_menu {
+		display: none;
+	}
+
+	/*TOPページ内　トップ画像*/
+	#top {
+		height: 600px;
+	}
+
+	#top img {
+		width: 100%;
+		height: 600px;
+		position: static;
+		transform: translate(0, 0);
+		object-fit: cover;
+	}
+
+	/*	ページ内装飾*/
+	/*
+	.scallop-up {
+		height: 30px;
+	}
+
+	.scallop-down {
+		height: 30px;
+	}
+*/
+
+	/*TOPページ内　私たちの想い*/
+	.dec_aboutus {
+		display: none;
+	}
+
+	.sec_aboutus h2 {
+		padding-top: 10px;
+	}
+
+	.sec_aboutus h2 img {
+		width: 200px;
+		margin: 0 auto;
+	}
+
+	.sec_aboutus p {
+		width: 90%;
+		line-height: 2em;
+		z-index: 20;
+		position: relative;
+	}
+
+	.sec_aboutus p img {
+		padding: 20px;
+		width: 200px;
+	}
+
+	.aboutus_img {
+		display: none;
+	}
+
+	.aboutus_img.scrollin {
+		display: none;
+	}
+
+	.aboutus_img2 {
+		display: none;
+	}
+
+	.aboutus_img2.scrollin {
+		display: none;
+	}
+
+	/*TOPページ内　新着情報*/
+	.dec_news {
+		display: none;
+	}
+
+	.sec_news {
+		padding: 10px 0;
+	}
+
+	.sec_news h2 {
+		padding-top: 10px;
+	}
+
+	.sec_news h2 img {
+		margin: 0 auto;
+		width: 200px;
+	}
+
+	.sec_news ul {
+		width: 60vw;
+	}
+
+	.sec_news li {
+		padding: 10px 0 5px;
+		text-indent: 0;
+		margin-left: 0;
+		border-bottom: 2px dashed #ac6525;
+	}
+
+	.sec_news time {
+		font-weight: 600;
+	}
+
+	.sec_news time::after {
+		content: '\A';
+		white-space: pre;
+	}
+
+	.sec_news p img {
+		padding: 10px;
+		width: 200px;
+	}
+
+	.sec_news a {
+		font-weight: 400;
+	}
+
+	/*TOPページ内　オンラインショップ*/
+	.dec_shop {
+		display: none;
+	}
+
+	.shop_bn {
+		width: 70vw;
+	}
+
+	.sec_shop2 dt img {
+		width: 20vw;
+	}
+
+	.sec_shop2 h2 img {
+		margin: 0 auto;
+		width: 200px;
+	}
+
+	.sec_shop2 p {
+		margin: 0;
+		padding: 0;
+	}
+
+	.sec_shop2 p img {
+		padding: 20px;
+		width: 200px;
+	}
+
+	/*TOPページ内　お問合せ*/
+	.dec_access {
+		display: none;
+	}
+
+	.sec_contact {
+		width: 80vw;
+		margin: 0 auto;
+	}
+
+	.sec_contact h2 {
+		margin: 0;
+		padding-top: 10px;
+	}
+
+	.sec_contact h2 img {
+		margin: 0 auto;
+		width: 200px;
+	}
+
+	.map {
+		display: block;
+		width: 100vw;
+	}
+
+	.map figure {
+		margin: 0;
+	}
+
+	.map figcaption {
+		width: 80vw;
+		margin: 0;
+	}
+
+	.map figure img {
+		width: 70vw;
+		margin: 0;
+		display: block;
+	}
+
+	.map figcaption a {
+		width: 50%;
+		font-size: .8em;
+		line-height: 1.6em;
+	}
+
+	.map figcaption a::before {
+		background-color: #ca9b70;
+	}
+
+	.map p {
+		width: 70vw;
+		margin: 0;
+	}
+
+	.map p::before {
+		content: '';
+		display: block;
+		height: 8px;
+		background: repeating-linear-gradient(-45deg, #ac6525 0, #ac6525 1px, transparent 0, transparent 50%);
+		background-size: 8px 8px;
+		margin-bottom: 3px;
+	}
+
+	.map p::after {
+		content: '';
+		display: block;
+		height: 8px;
+		background: repeating-linear-gradient(-45deg, #ac6525 0, #ac6525 1px, transparent 0, transparent 50%);
+		background-size: 8px 8px;
+		margin-top: 3px;
+	}
+}
+
+@media (max-width:768px) {
+
+	/*	トップ画像アニメーション*/
+	.bound-img-wrap {
+		display: flex;
+		top: 520px;
+	}
+
+	.bound-img-wrap img {
+		width: 15vw;
+		height: auto;
+		animation: infinity-loop 10s  infinite linear 1s both;
+		transform: none;
+	}
+	
+/*
+	@keyframes infinity-loop {
+		from {
+			transform: translateX(0vw);
+		}
+
+		to {
+			transform: translateX(-100vw);
+		}
+*/
+
+	/*	トップへ戻る*/
+	.pagetop img {
+		width: 70px;
+	}
+	
+/*	TOPページ内お買い物*/
+	.sec_shop2 dt img {
+		width: 20vw;
+	}
+
+	/*	フッター*/
+	.footer_img {
+		height: 70px;
+	}
+
+	.footer_img img {
+		width: 100%;
+		height: 100px;
+		object-fit: cover;
+	}
+
+	.footer_address {
+		margin-left: 2em;
+		width: 30%;
+		font-size: .8em;
+		line-height: 1.1em;
+	}
+
+	.footer_address img {
+		display: none;
+	}
+
+	.footer_nav {
+		width: 40%;
+		font-size: .8em;
+	}
+
+	.footer_nav li {
+		height: 2em;
+		line-height: 2em;
+	}
+	
+	.footer_sns {
+		margin-right: 2em;
+	}
+
+	.footer_sns i {
+		font-size: 1.5em;
+		padding: 5px;
+	}
+
+	.footer_sns ul {
+		display: block;
+		margin: 0;
+		padding: 10px;
+	}
+}

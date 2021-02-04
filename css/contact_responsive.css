@@ -1,0 +1,95 @@
+@charaset "utf-8";
+
+@media screen and (min-width: 1200px) {
+    #main-contact {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-contact {
+        width: 90%;
+    }
+
+    .ttl-en {
+        font-size: 2em;
+    }
+
+    p.ttl-ja {
+        font-size: 1em;
+    }
+
+    .text-margin-1 {
+        margin: 20px;
+        text-align: left;
+    }
+
+    /*  よくある質問*/
+    .ttl-img img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    div.qa-list {
+        width: 100%;
+    }
+
+    .qa-list dl {
+        margin: 10px 0 0;
+    }
+
+    .qa-list dl:after {
+        top: 20px;
+        right: 5px;
+        width: 4px;
+        height: 4px;
+    }
+
+    .qa-list dl dt {
+        padding: 10px 10px 10px 30px;
+        font-size: 12px;
+    }
+
+    .qa-list dl dt::before {
+        font-size: 13px;
+        top: 13px;
+        left: 13px;
+    }
+
+    .qa-list dl dd::before {
+        font-size: 16px;
+        left: 20px;
+        margin-top: 2px;
+    }
+
+    .qa-list dl dd {
+        margin: 0;
+        padding: 10px 10px 10px 40px;
+        font-size: 13px;
+    }
+
+    .qa-list dl dd p {
+        margin: 15px 0 0;
+        text-align: left;
+    }
+
+    .qa-list dl dd p:first-child {
+        margin-top: 0;
+    }
+
+    /*　お問い合わせ　*/
+    .contact-wrap {
+        font-size: 0.7em;
+        width: 100%;
+    }
+
+    .box-contact-mail p.setumei {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .box-contact-mail form p {
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>おはベジ - お買いもの</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common_responsive.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+
+    <link rel="stylesheet" href="css/shop_responsive.css" media="screen and (max-width:768px)">
+
+
+    <!--Google Fontsへのリンク-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+
+    <!--slickへのリンク-->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jQuery3.4.1.js"></script>
+    <script src="js/jQuery3.5.1.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+	</style>
+</head>
+
+<body class="shop is-slide" id="page-animate">
+    <!--ローディング画面-->
+    <div class="block2">
+        <div class="circle2"></div>
+        <div class="circle2"></div>
+        <div class="circle2"></div>
+    </div>
+    <div id="container">
+        <!--ヘッダー-->
+        <header>
+            <!--	タイトルロゴ-->
+            <div class="logo">
+                <h1><a href="index.html"><img src="img/navlogoyoko.svg" alt="OHAVEGE"></a></h1>
+            </div>
+
+            <!--		ナビゲーション-->
+            <div id="navArea">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="aboutus.html">
+                                <span class="title_en">ABOUT US </span>
+                                <span class="title_ja">私たちの想い</span>
+
+                                <span class="hover-indicater">
+                                    <svg version="1.1" id="maru" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="80px" viewBox="0 0 200 80" enable-background="new 0 0 200 80" xml:space="preserve">
+                                        <path class="logo0" fill="none" stroke="rgba(202,155,112,.8)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M146.667,73.334c0,0-34.748-0.867-43.374-1.434s-41.359-4.91-45.892-5.659s-31.485-6.781-35.783-9.07S4.828,51.5,5.162,36.833
+	s9.708-24.263,36.627-26.286S88.721,7.479,100.192,7.5s44.06,4.048,50.393,5.167s23.665,4.795,29.194,6.692
+	s15.443,6.629,15.443,14.974c0,4.745-0.889,7.917-8.384,16.123c-9.726,10.648-26.126,14.995-32.113,16.569S106.334,77,102.334,77" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+
+
+
+                        <li><a href="news.html">
+                                <span class="title_en">NEWS</span>
+                                <span class="title_ja">読みもの</span>
+                                <span class="hover-indicater">
+                                    <svg version="1.1" id="maru" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="80px" viewBox="0 0 200 80" enable-background="new 0 0 200 80" xml:space="preserve">
+                                        <path class="logo0" fill="none" stroke="rgba(202,155,112,.8)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M146.667,73.334c0,0-34.748-0.867-43.374-1.434s-41.359-4.91-45.892-5.659s-31.485-6.781-35.783-9.07S4.828,51.5,5.162,36.833
+	s9.708-24.263,36.627-26.286S88.721,7.479,100.192,7.5s44.06,4.048,50.393,5.167s23.665,4.795,29.194,6.692
+	s15.443,6.629,15.443,14.974c0,4.745-0.889,7.917-8.384,16.123c-9.726,10.648-26.126,14.995-32.113,16.569S106.334,77,102.334,77" />
+                                    </svg>
+                                </span>
+
+                            </a></li>
+
+
+
+                        <li><a href="contact.html">
+                                <span class="title_en">CONTACT</span>
+                                <span class="title_ja">お問い合わせ</span>
+                                <span class="hover-indicater">
+                                    <svg version="1.1" id="maru" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="80px" viewBox="0 0 200 80" enable-background="new 0 0 200 80" xml:space="preserve">
+                                        <path class="logo0" fill="none" stroke="rgba(202,155,112,.8)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M146.667,73.334c0,0-34.748-0.867-43.374-1.434s-41.359-4.91-45.892-5.659s-31.485-6.781-35.783-9.07S4.828,51.5,5.162,36.833
+	s9.708-24.263,36.627-26.286S88.721,7.479,100.192,7.5s44.06,4.048,50.393,5.167s23.665,4.795,29.194,6.692
+	s15.443,6.629,15.443,14.974c0,4.745-0.889,7.917-8.384,16.123c-9.726,10.648-26.126,14.995-32.113,16.569S106.334,77,102.334,77" />
+                                    </svg>
+                                </span>
+
+                            </a></li>
+
+
+
+
+                        <li><a href="shop.html">
+                                <span class="title_en">ONLINE SHOP</span>
+                                <span class="title_ja">お買いもの</span>
+                                <span class="hover-indicater">
+                                    <svg version="1.1" id="maru" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="80px" viewBox="0 0 200 80" enable-background="new 0 0 200 80" xml:space="preserve">
+                                        <path class="logo0" fill="none" stroke="rgba(202,155,112,.8)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M146.667,73.334c0,0-34.748-0.867-43.374-1.434s-41.359-4.91-45.892-5.659s-31.485-6.781-35.783-9.07S4.828,51.5,5.162,36.833
+	s9.708-24.263,36.627-26.286S88.721,7.479,100.192,7.5s44.06,4.048,50.393,5.167s23.665,4.795,29.194,6.692
+	s15.443,6.629,15.443,14.974c0,4.745-0.889,7.917-8.384,16.123c-9.726,10.648-26.126,14.995-32.113,16.569S106.334,77,102.334,77" />
+                                    </svg>
+                                </span>
+
+                            </a></li>
+                    </ul>
+                </nav>
+
+                <div class="toggle_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div id="mask"></div>
+            </div>
+            <!--ナビ右側-->
+            <div class="right_menu">
+                <ul>
+                    <li>
+                        <a href="index.html#map"><i class="fas fa-map-marker-alt"></i><span>MAP</span></a>
+                    </li>
+                    <li>
+                        <a href="html/mypage.html"><i class="fas fa-user"></i><span>MY PAGE</span></a>
+                    </li>
+                    <li>
+                        <a href="html/shop_cart.html" class="badge" data-badge=""><i class="fas fa-shopping-cart"></i><span>CART</span></a>
+
+                        <!--カートのカウント-->
+                        <!--
+                        <div class="cart_cnt hidden">
+                            <span id="js_cart_cnt"></span>
+                        </div>
+-->
+                </li>
+                </ul>
+            </div>
+        </header>
+
+        <!--		PAGE TOP-->
+        <div class="pagetop">
+            <a href="#"><img src="img/illust24.png" width="100px" height="100px" alt="トップへ戻る"></a>
+        </div>
+
+        <!--メインコンテンツ-->
+
+
+        <!--スライド始まり-->
+        <div class="sliderArea">
+            <div class="sliderWide">
+                <ul class="slider">
+                    <li><img src="img/slide_ansin.jpg" alt="安心・安全・新鮮野菜をお届け"></li>
+                    <li><img src="img/slide_koseiha2.jpg" alt="個性派野菜いつもとちがう野菜を食べてみませんか"></li>
+                    <li><img src="img/slide_ohavege2.jpg" alt="おはようベジタブル朝から野菜を食べよう"></li>
+                    <li><img src="img/slide_recipe.jpg" alt="お野菜レシピ公開中"></li>
+                    <li><img src="img/slide_seisansya2.jpg" alt="生産者の想いを乗せて"></li>
+                </ul>
+            </div>
+        </div>
+        <!--スライド終わり-->
+
+        <!--背景アニメーションのためのliはじまり-->
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!--背景アニメーションのためのliおわり-->
+
+        <!--sidebar-->
+        <div id="shop_main">
+            <div id="sub_nav">
+                <ul>
+                    <li><a href="#shun"><img src="img/kabocya2_color2.png">
+                            <p>旬の野菜</p>
+                        </a></li>
+                    <li><a href="#teiban"><img src="img/remon2_color2.png">
+                            <p>定番野菜</p>
+                        </a></li>
+                    <li><a href="#kosei"><img src="img/beats.png">
+                            <p>個性派野菜</p>
+                        </a></li>
+                    <li><a href="#moriawase"><img src="img/tumeawase.png">盛り合わせ</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
+            <div id="content" class="sec_shop">
+                <h3><img src="img/syun3.gif" alt="旬" id="shun" class="element js-fadein"></h3>
+                <div class="sec_syun element js-fadein cp_bgpattern10">
+
+                    <section id="box1">
+                        <dl>
+                            <dt class="shop_ribbon">かぼちゃ</dt>
+                            <dd><img src="img/pumpkin1.jpg" alt="かぼちゃ"></dd>
+                            <dd>
+                                <p>甘くてほくほくのかぼちゃ。<br>お料理にお菓子やパン作りにどうぞ</p>
+                            </dd>
+                            <dd>価格：1箱 <label for="item1">600円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item1 item btn_count_up" name="item1" max="10" min="0" value="0">箱
+                            </dd>
+                        </dl>
+
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">くり</dt>
+
+                            <dd><img src="img/kuri.jpg" alt="くり"></dd>
+                            <dd>
+                                <p>1粒がとっても大きな栗です。栗ご飯はもちろん、<br>マロングラッセや渋皮煮にしても豪華ですよ。</p>
+                            </dd>
+
+                            <dd>価格：1袋 <label for="item2">1200円</label>(税込)</dd>
+
+
+                            <dd>
+                                個数　<input type="number" class="calc" id="item2" name="item2" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">マツタケ</dt>
+                            <dd><img src="img/matutake.jpg" alt="まつたけ"></dd>
+                            <dd>
+                                <p>貴重な国産マツタケ。いい香りです</p>
+                            </dd>
+                            <dd>価格：1袋 <label for="item3">10000円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item3" name="item3" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">ブドウ</dt>
+                            <dd><img src="img/budou1.jpg" alt="ぶどう"></dd>
+                            <dd>
+                                <p>夏の太陽をたくさん浴びて、<br>甘い甘いブドウになっています。</p>
+                            </dd>
+                            <dd>価格：1袋 <label for="item4">600円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item4" name="item4" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+
+
+                        <dl>
+                            <dt class="shop_ribbon">みかん</dt>
+                            <dd><img src="img/orange.jpg" alt="みかん"></dd>
+                            <dd>
+                                <p>小ぶりですがジューシーなみかんです。<br>甘酸っぱさが口いっぱいに広がります。</p>
+                            </dd>
+                            <dd>価格：1箱 <label for="item5">2000円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item5" name="item5" max="10" min="0" value="0">箱
+                            </dd>
+                        </dl>
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">イチゴ</dt>
+                            <dd><img src="img/ichigo.jpg" alt="いちご"></dd>
+                            <dd>
+                                <p>やっと赤くなり始めたイチゴたちです。</p>
+                            </dd>
+                            <dd>価格：1パック <label for="item6">1000円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item6" name="item6" max="10" min="0" value="0">パック
+                            </dd>
+                        </dl>
+                    </section>
+
+
+
+                </div>
+
+
+                <hr class="shop_hr">
+                <h3><img src="img/teiban_title.gif" alt="定番の野菜" id="teiban" class="element js-fadein"></h3>
+                <div class="sec_teiban element js-fadein cp_bgpattern11">
+
+
+                    <section id="box1">
+                        <dl>
+                            <dt class="shop_ribbon">トマト</dt>
+                            <dd><img src="img/tomato.jpg" alt="トマト"></dd>
+                            <dd>
+                                <p>薄皮で、ほのかに酸味がある、<br>フルーツのように甘い、摘み立てトマトです。<br>
+                                    女の子のような可愛らしさと、生産者の愛情がこもったまさにトマト娘です。
+                                    サラダや、デザート代わりにも召し上がって下さい。
+                                </p>
+                            </dd>
+                            <dd>価格：1袋 <label for="item7">600円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item7" name="item7" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">ピーマン</dt>
+                            <dd><img src="img/pi-man.jpg" alt="ピーマン"></dd>
+                            <dd>
+                                <p>香りを残しつつ、苦味を抑えたお子様にも食べやすい肉厚のピーマン。
+                                    ビタミンCはレモン並みで、焼くのはもちろん、生でも食べられます。
+                                    ピーマン食べてハッピーマン。
+                                </p>
+                            </dd>
+                            <dd>価格：1袋 <label for="item8">500円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item8" name="item8" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+
+
+
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">たまねぎ</dt>
+                            <dd><img src="img/tamanegi.jpg" alt="たまねぎ"></dd>
+                            <dd>
+                                <p>みずみずしく、甘みの強い玉ねぎです。
+                                    大きさもあり、剥いても剥いてもなくなりません。
+                                    あまりのおいしさに全世界が泣いた逸品です。
+                                </p>
+                            </dd>
+                            <dd>価格：1袋 <label for="item9">300円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item9" name="item9" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">なす</dt>
+                            <dd><img src="img/nasu.jpg" alt="なす"></dd>
+                            <dd>
+                                <p>茄子界の革命児です。
+                                    えぐみや青臭さ、渋みがなく、そのまま食べられ、どんな料理もできます。
+                                    成すがままにお料理してください。</p>
+                            </dd>
+                            <dd>価格：1袋 <label for="item10">500円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item10" name="item10" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+
+
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">レモン</dt>
+                            <dd><img src="img/lemon.jpg" alt="レモン"></dd>
+                            <dd>
+                                <p>皮が薄く、果肉たっぷり、果汁たっぷりが特徴。
+                                    皮もそのまま食べられ、飲み物やスイーツ、お鍋に最適です。
+                                    さわやかな酸味とほのかな甘みで、甘酸っぱいあの日々を思いだしてみませんか。</p>
+                            </dd>
+                            <dd>価格：1袋 <label for="item11">300円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item11" name="item11" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+                    </section>
+
+                </div>
+
+
+                <hr class="shop_hr">
+                <h3><img src="img/koseiha.gif" alt="個性派野菜" id="kosei" class="element js-fadein"></h3>
+                <div class="sec_koseiha element js-fadein cp_bgpattern11">
+
+
+                    <section id="box1">
+                        <dl>
+                            <dt class="shop_ribbon">ビーツ</dt>
+                            <dd><img src="img/beet.jpg" alt="ビーツ"></dd>
+                            <dd>
+                                <p>スーパーフードと呼ばれるくらい栄養が豊富な野菜です。
+                                    色合いがよく、主にボルシチに使われる野菜で、ハードルが高い食材に思われがちですが、
+                                    スープやホイル焼き、スムージー、きんぴらなどでお召し上がりください。
+                                </p>
+                            </dd>
+                            <dd>価格： 1袋 <label for="item12">300円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item12" name="item12" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">ドラゴンフルーツ</dt>
+                            <dd><img src="img/doragon1.jpg" alt="ドラゴンフルーツ"></dd>
+                            <dd>
+                                <p>別名「ピタヤボウル」と言われており、海外セレブからも人気のフルーツです。
+                                    スーパーのものは外国産で未熟なものが多く、甘みが少なくあっさりしていますが、
+                                    国内産のものは糖度が高く完熟したものが食べられます。</p>
+                            </dd>
+                            <dd>価格： 1袋 <label for="item13">600円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item13" name="item13" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+
+
+
+
+
+                        <dl>
+                            <dt class="shop_ribbon">カリブロ</dt>
+                            <dd><img src="img/kariburo-.jpg" alt="カリブロ"></dd>
+                            <dd>
+                                <p>ロマネスコともいわれ、見て楽しんで、味も楽しめるお野菜です。
+                                    青臭さがなく、甘みが際立つ筑後川のブランド野菜です。ちなみにカリブロの名は福岡県久留米市が命名しました。
+                                    塩ゆでやサラダ、シチューの具にスープといろいろなアレンジが楽しめます。
+                                </p>
+                            </dd>
+                            <dd>価格： 1袋 <label for="item14">300円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item14" name="item14" max="10" min="0" value="0">袋
+                            </dd>
+                        </dl>
+                    </section>
+
+                </div>
+
+
+
+                <hr class="shop_hr">
+                <h3><img src="img/moriawase.gif" alt="盛り合わせ" id="moriawase" class="element js-fadein"></h3>
+
+
+                <div class="sec_tumeawase element js-fadein cp_bgpattern11">
+
+
+                    <section id="box1">
+                        <dl>
+                            <dt class="shop_ribbon">盛り合わせ</dt>
+                            <dd><img src="img/tumeawase2.jpg" alt="お野菜詰め合わせ"></dd>
+                            <dd>
+                                <p>おはべジがお届けしているお野菜を、ひと箱にたっぷり詰め込みました。
+                                    お客様からの野菜のご指定は承っていませんが、それ以上の価値をお届けいたします。
+                                    季節によって内容はかわりますが、ぜひとも夢のような体験をして下さい。
+                                    また、内容に不服の場合はご返品賜りません。
+                                </p>
+                            </dd>
+                            <dd>価格：1箱 <label for="item15">5000円</label>(税込)</dd>
+                            <dd>
+                                個数　<input type="number" class="calc" id="item15" name="item15" max="10" min="0" value="0">箱
+                            </dd>
+                        </dl>
+
+                    </section>
+                </div>
+            </div>
+
+            <hr class="shop_hr">
+        </div>
+
+
+
+        <section id="box2">
+            <h1>合計</h1>
+            <p>かぼちゃ/0箱：0円</p>
+            <p>くり/0袋：0円</p>
+            <p>マツタケ/0袋：0円</p>
+            <p>ブドウ/0袋：0円</p>
+            <p>みかん/0箱：0円</p>
+            <p>イチゴ/0袋：0円</p>
+            <p>トマト/0袋：0円</p>
+            <p>ピーマン/0袋：0円</p>
+            <p>たまねぎ/0袋：0円</p>
+            <p>なす/0袋：0円</p>
+            <p>レモン/0袋：0円</p>
+            <p>ビーツ/0袋：0円</p>
+            <p>ドラゴンフルーツ/0袋：0円</p>
+            <p>カリブロ/0袋：0円</p>
+            <p>詰め合わせ/0箱：0円</p>
+            <hr>
+            <p>合計/0個：0円</p>
+            <input type="submit" value="購入へ進む">
+            <button type="button" class="reset">リセット</button>
+        </section>
+
+
+
+        <!--フッター-->
+        <footer>
+            <div class="footer_img">
+                <img src="img/footer1.png" alt="">
+            </div>
+            <div class="footer_wrap">
+                <div class="footer_address">
+                    <a href="index.html"><img src="img/footerlogo.png" alt="OHAVEGE"></a>
+                    <p>株式会社おはようベジタブル</p>
+                    <p>〒810-0001
+                        福岡県福岡市中央区天神3丁目4-8 天神重松ビル6F</p>
+                    <p>TEL:0120-831-0141 FAX:0120-831-0831</p>
+                    <p>MAIL:info@ohavege.com</p>
+                </div>
+                <div class="footer_nav">
+                    <ul>
+                        <li><a href="aboutus.html">ABOUT US 私たちの想い</a></li>
+                        <li><a href="news.html">NEWS 読みもの</a></li>
+                        <li><a href="contact.html">CONTACT お問い合わせ</a></li>
+                        <li><a href="#">ONLINE SHOP お買いもの</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="html/privacyplicy.html">プライバシーポリシー</a></li>
+                        <li><a href="html/tokushohou.html">特定商取引法に関する表示</a></li>
+                    </ul>
+                </div>
+                <div class="footer_sns">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--コピーライト-->
+            <div id="copyright">
+                <p>
+                    <small>Copyright &copy; 2020 OHAVEGE Inc.</small>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!--jacascriptへのリンク-->
+    <script src="js/online_shop.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+
+</html>

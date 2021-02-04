@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>おはベジ - 全国の野菜・果物セレクトショップ</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index_responsive.css">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/favicon.ico" type="image/ico">
+	<script src="js/jQuery3.4.1.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body class="is-slide" id="page-animate">
+	<!--ローディング画面-->
+	<div class="block2">
+		<div class="circle2"></div>
+		<div class="circle2"></div>
+		<div class="circle2"></div>
+	</div>
+
+	<div id="container">
+		<!--ヘッダー-->
+		<header>
+			<!--	タイトルロゴ-->
+			<div class="logo">
+				<h1><a href="index.html"><img src="img/navlogoyoko.svg" alt="OHAVEGE"></a></h1>
+			</div>
+
+			<!--		ナビゲーション-->
+			<div id="navArea">
+				<nav class="nav">
+					<ul>
+						<li><a href="aboutus.html">
+								<span class="title_en">ABOUT US </span>
+								<span class="title_ja">私たちの想い</span>
+
+								<span class="hover-indicater">
+									<svg version="1.1" id="maru" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="80px" viewBox="0 0 200 80" enable-background="new 0 0 200 80" xml:space="preserve">
+										<path class="logo0" fill="none" stroke="rgba(202,155,112,.8)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M146.667,73.334c0,0-34.748-0.867-43.374-1.434s-41.359-4.91-45.892-5.659s-31.485-6.781-35.783-9.07S4.828,51.5,5.162,36.833
+	s9.708-24.263,36.627-26.286S88.721,7.479,100.192,7.5s44.06,4.048,50.393,5.167s23.665,4.795,29.194,6.692
+	s15.443,6.629,15.443,14.974c0,4.745-0.889,7.917-8.384,16.123c-9.726,10.648-26.126,14.995-32.113,16.569S106.334,77,102.334,77" />
+									</svg>
+								</span>
+							</a>
+						</li>
+
+
+
+
+						<li><a href="news.html">
+								<span class="title_en">NEWS</span>
+								<span class="title_ja">読みもの</span>
+								<span class="hover-indicater">
+									<svg version="1.1" id="maru" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="80px" viewBox="0 0 200 80" enable-background="new 0 0 200 80" xml:space="preserve">
+										<path class="logo0" fill="none" stroke="rgba(202,155,112,.8)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M146.667,73.334c0,0-34.748-0.867-43.374-1.434s-41.359-4.91-45.892-5.659s-31.485-6.781-35.783-9.07S4.828,51.5,5.162,36.833
+	s9.708-24.263,36.627-26.286S88.721,7.479,100.192,7.5s44.06,4.048,50.393,5.167s23.665,4.795,29.194,6.692
+	s15.443,6.629,15.443,14.974c0,4.745-0.889,7.917-8.384,16.123c-9.726,10.648-26.126,14.995-32.113,16.569S106.334,77,102.334,77" />
+									</svg>
+								</span>
+
+							</a></li>
+
+
+
+						<li><a href="contact.html">
+								<span class="title_en">CONTACT</span>
+								<span class="title_ja">お問い合わせ</span>
+								<span class="hover-indicater">
+									<svg version="1.1" id="maru" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="80px" viewBox="0 0 200 80" enable-background="new 0 0 200 80" xml:space="preserve">
+										<path class="logo0" fill="none" stroke="rgba(202,155,112,.8)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M146.667,73.334c0,0-34.748-0.867-43.374-1.434s-41.359-4.91-45.892-5.659s-31.485-6.781-35.783-9.07S4.828,51.5,5.162,36.833
+	s9.708-24.263,36.627-26.286S88.721,7.479,100.192,7.5s44.06,4.048,50.393,5.167s23.665,4.795,29.194,6.692
+	s15.443,6.629,15.443,14.974c0,4.745-0.889,7.917-8.384,16.123c-9.726,10.648-26.126,14.995-32.113,16.569S106.334,77,102.334,77" />
+									</svg>
+								</span>
+
+							</a></li>
+
+
+
+
+						<li><a href="shop.html">
+								<span class="title_en">ONLINE SHOP</span>
+								<span class="title_ja">お買いもの</span>
+								<span class="hover-indicater">
+									<svg version="1.1" id="maru" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="80px" viewBox="0 0 200 80" enable-background="new 0 0 200 80" xml:space="preserve">
+										<path class="logo0" fill="none" stroke="rgba(202,155,112,.8)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M146.667,73.334c0,0-34.748-0.867-43.374-1.434s-41.359-4.91-45.892-5.659s-31.485-6.781-35.783-9.07S4.828,51.5,5.162,36.833
+	s9.708-24.263,36.627-26.286S88.721,7.479,100.192,7.5s44.06,4.048,50.393,5.167s23.665,4.795,29.194,6.692
+	s15.443,6.629,15.443,14.974c0,4.745-0.889,7.917-8.384,16.123c-9.726,10.648-26.126,14.995-32.113,16.569S106.334,77,102.334,77" />
+									</svg>
+								</span>
+
+							</a></li>
+					</ul>
+				</nav>
+
+				<div class="toggle_btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<div id="mask"></div>
+			</div>
+			<!--ナビ右側-->
+			<div class="right_menu">
+				<ul>
+					<li>
+						<a href="#map"><i class="fas fa-map-marker-alt"></i><span>MAP</span></a>
+					</li>
+					<li>
+						<a href="html/mypage.html"><i class="fas fa-user"></i><span>MY PAGE</span></a>
+					</li>
+					<li>
+						<a href="html/shop_cart.html"><i class="fas fa-shopping-cart"></i><span>CART</span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<!--トップイメージ-->
+		<div id="top_image">
+			<div id="top">
+				<img src="img/top1-2.jpg" alt="">
+			</div>
+			<div class="bound-img-wrap">
+				<a href="shop.html"><img src="img/budou_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/cyabetu_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/ichigo_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/hakusai_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/kabocya2_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/kaki_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/kyuuri_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/nasu_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/pi-man_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/ninjin2_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/remon2_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/tamanegi_color2.gif" alt=""></a>
+				<a href="shop.html"><img src="img/tomato2_color2.gif" alt=""></a>
+			</div>
+		</div>
+
+		<!--		PAGE TOP-->
+		<div id="main">
+			<div class="pagetop">
+				<a href="#"><img src="img/illust24.png" width="100px" height="100px" alt="トップへ戻る"></a>
+			</div>
+
+			<!--	私たちの想い-->
+			<section>
+				<div class="dec_aboutus">ABOUT US</div>
+			</section>
+			<section class="sec_aboutus fadein2">
+				<div class="aboutus_img">
+					<img src="img/omoi0_hannten.png">
+				</div>
+				<div class="aboutus_img2">
+					<img src="img/omoi0.png">
+				</div>
+				<h2><img src="img/title_ribon1.png" alt="私たちの想い"> </h2>
+				<p>おはよう、ベジタブル</p>
+				<p>朝から野菜をたべよう</p>
+				<p>おはベジの始まりは、お客様に朝から野菜をたくさん食べて、笑顔いっぱい、元気いっぱいで過ごしてほしいという想いにありました。
+					農園では、無農薬・有機栽培にこだわって、安心・安全な商品をお届けできるよう、日々汗を流しています。
+					おひさまの光をたくさん浴びて、有機肥料のみの健康な土で育った自慢の野菜と果物たち。
+					自然の恵みがいっぱい詰まったおはベジの野菜と果物を食べて、一日を笑顔で始めてみませんか？</p>
+				<p>
+					<a href="aboutus.html"><img class="read_more" src="img/readmore.png" alt="リードモア"></a>
+				</p>
+			</section>
+			<!--読みもの-->
+			<section>
+				<div class="dec_news">NEWS</div>
+			</section>
+			<section class="skewed_wrap">
+				<div class="skewed"></div>
+			</section>
+			<section class="sec_news fadein2">
+				<h2><img src="img/title_ribon2.png" 　alt="新着情報"> </h2>
+				<ul>
+					<li><a href="#"> <time datetime="2020-09-29">2020年9月29日</time>&nbsp;
+							芋掘り体験
+							今年も藤田農園で芋掘り体験が行われました。</a></li>
+					<li><a href="#"><time datetime="2020-09-15">2020年9月15日</time>&nbsp;
+							実りの秋セール実施中!おはベジではただいま実りの秋セールを実施中です。
+						</a></li>
+					<li><a href="#"><time datetime="2020-09-13">2020年9月13日</time>&nbsp;
+							7月から始まった梨狩り。
+							今年は大豊作で、たくさんの皆様にお楽しみいただいています。</a></li>
+				</ul>
+				<p>
+					<a href="aboutus.html"><img class="read_more" src="img/readmore.png" alt="リードモア"></a>
+				</p>
+			</section>
+
+			<!--お買いもの-->
+			<section>
+				<div class="dec_shop">SHOP</div>
+			</section>
+			<section class="sec_shop2 fadein2">
+				<h2><img src="img/title_ribon3-1.png" alt="お買いもの"></h2>
+				<div class="shop_bn">
+					<a href="shop.html">
+						<dl>
+							<dt>
+								<img src="img/kabocya2_color2.gif" alt="旬の野菜">
+							</dt>
+							<dd>旬の野菜</dd>
+						</dl>
+					</a>
+					<a href="shop.html">
+						<dl>
+							<dt>
+								<img src="img/remon2_color2.gif" alt="定番野菜">
+							</dt>
+							<dd>定番野菜</dd>
+						</dl>
+					</a>
+					<a href="shop.html">
+						<dl>
+							<dt>
+								<img src="img/beats.gif" alt="特別な野菜">
+							</dt>
+							<dd>特別な野菜</dd>
+						</dl>
+					</a>
+				</div>
+				<p>
+					<a href="shop.html"><img src="img/onloneshop.png" alt="オンラインショップ"></a>
+				</p>
+				<section class="skewed_wrap2">
+					<div class="skewed2"></div>
+				</section>
+			</section>
+			<!--お問合せ-->
+			<section id="map">
+				<div class="dec_access">ACCESS</div>
+			</section>
+			<section class="sec_contact fadein2">
+				<h2><img src="img/title_ribon4.png" alt="店舗情報"></h2>
+				<div class="map">
+					<figure>
+						<img src="img/map.gif" alt="マップ">
+						<figcaption><a href="#">Google Mapはこちら</a></figcaption>
+					</figure>
+					<p>
+						徒歩１０分<br>
+						地下鉄３番出口より
+						高原屋百貨店を正面に左折。
+						２００ｍほどで杉本高前交差点信号を左折。
+						熊野神社を通過後、尾原山荘が見えたら野菜通を左折。
+						重松ビル（1階に朝永銀行さんが入っています）
+
+						<br>高速道路
+						天神ランプから牛島通りを直進し、原交差点を右折。野菜通りに店舗がございます。<br>
+
+						西鉄バス831番
+						おはべジ前バス停（博多駅から直通）
+						西鉄バス8931番
+						おはベジ前バス停（天神駅から直通）
+						<br>※専用駐車場（１００台完備）がございます
+					</p>
+				</div>
+			</section>
+		</div>
+		<!--フッター-->
+		<footer>
+			<div class="footer_img">
+				<img src="img/footer1.png" alt="">
+			</div>
+			<div class="footer_wrap">
+				<div class="footer_address">
+					<a href="#"><img src="img/footerlogo.png" alt="OHAVEGE"></a>
+					<p>株式会社おはようベジタブル</p>
+					<p>〒810-0001
+						福岡県福岡市中央区天神3丁目4-8 天神重松ビル6F</p>
+					<p>TEL:0120-831-0141 FAX:0120-831-0831</p>
+					<p>MAIL:info@ohavege.com</p>
+				</div>
+				<div class="footer_nav">
+					<ul>
+						<li><a href="aboutus.html">ABOUT US 私たちの想い</a></li>
+						<li><a href="news.html">NEWS 読みもの</a></li>
+						<li><a href="contact.html">CONTACT お問い合わせ</a></li>
+						<li><a href="shop.html">ONLINE SHOP お買いもの</a></li>
+					</ul>
+					<ul>
+						<li><a href="html/privacyplicy.html">プライバシーポリシー</a></li>
+						<li><a href="html/tokushohou.html">特定商取引法に関する表示</a></li>
+					</ul>
+				</div>
+				<div class="footer_sns">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-line"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!--コピーライト-->
+			<div id="copyright">
+				<p>
+					<small>Copyright &copy; 2020 OHAVEGE Inc.</small>
+				</p>
+			</div>
+		</footer>
+	</div>
+</body></html>
